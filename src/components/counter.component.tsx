@@ -6,6 +6,7 @@ export interface CounterProps {
   onInCrement: any;
   onDecrement: any;
   onDelete: any;
+  onClose:any
 }
 
 export interface CounterState {}
@@ -48,6 +49,7 @@ function CounterComponent (props: CounterProps) {
       </React.Fragment>
     );
 
+  
 function formatCount() {
     const value = props.counter.value;
     return value === 0 ? <h6>Zero</h6> : <h6>{value}</h6>;
