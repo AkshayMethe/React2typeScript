@@ -75,10 +75,7 @@ function App() {
                 return <NotFound {...props}></NotFound>;
               }}
             ></Route>
-            {
-              // you must send props if you need to use history, location, ... objects
-            }
-            {/* <Redirect to="/not-found"></Redirect> */}
+
           </switch>
         </div>
       </main>
